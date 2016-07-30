@@ -6,23 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Does Trump Have A Plan Yet?</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+		.typed-cursor{
+		    opacity: 1;
+		    -webkit-animation: blink 0.7s infinite;
+		    -moz-animation: blink 0.7s infinite;
+		    animation: blink 0.7s infinite;
+		}
+		@keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+		    0% { opacity:1; }
+		    50% { opacity:0; }
+		    100% { opacity:1; }
+		}
+    </style>
   </head>
   <body>
   	<div class="container-fluid">
   		<div class="row">
-  			<div class="col-md-4"></div>
-			<div class="col-md-4">
-				<p class="text-center">
-			  		<button type="button" class="btn btn-danger btn-lg">No.</button>
-			  	</p>
+  			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<h1 class="text-center">
+					<div id="typed-strings">
+					    <p>^1000Does Trump Have A Plan Yet?<br>^500 No.^1000</p>
+					    <p>^1000Does Trump Have A Plan Yet?<br>^500 Nope.^1000</p>
+					    <p>^1000Does Trump Have A Plan Yet?<br>^500 Um, no.^1000</p>
+					    <p>^1000Does Trump Have A Plan Yet?<br>^500 Not.^100 A.^100 Thing.^1000</p>
+					</div>					
+					<span class="q"></span>
+				</h1>
 			</div>
-			<div class="col-md-4"></div>
+			</div>
+			<div class="col-md-3"></div>
 			  	
 		</div>
 	</div>	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+	<script>
+	  $(function(){
+	      $(".q").typed({
+	      	stringsElement: $('#typed-strings'),
+	        typeSpeed: 20,
+            backSpeed: 0,
+            loop: true,
+            shuffle: true,
+	      });
+	  });
+	</script>	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
